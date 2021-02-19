@@ -18,24 +18,20 @@
     margin-top: 30px;
     border: 1px solid var(--border-galerry-color);
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+&:hover{
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 
 }
-.gallery-list-item:hover{
-        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-
 }
 .gallery-list-link{
     display: block;
     overflow: hidden; 
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-
-}
-
-.gallery-list-link:focus,
-.gallery-list-link:hover{
+&:focus,
+&:hover{
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
   
+}
 }
 
 .gallery-text-container {
@@ -84,8 +80,8 @@
     letter-spacing: 0.03em;
     color: var(--third-text-color);
     padding: 24px;
-    }
-.gallery-list-link:focus .overlay,
-.gallery-list-link:hover .overlay {
+.gallery-list-link:focus &,
+.gallery-list-link:hover & {
     transform: translateY(0);
+    }
     }

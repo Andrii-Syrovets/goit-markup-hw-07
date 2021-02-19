@@ -36,25 +36,20 @@
    color: var(--third-text-color);
    text-decoration: none;
    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+&:hover,
+&:focus {
+   color: var(--active-color);
+}
 
 }
 
 .footer-list {
    display: inline-block;
+   &:not(:last-child) {
+      margin-bottom: 9px;
+   }
 }
 
-.footer-list:not(:last-child) {
-   margin-bottom: 9px;
-}
-
-.footer-address-link:hover,
-.footer-address-link:focus {
-   color: var(--active-color);
-}
-
-.footer-contact-link:not(:last-child) {
-   margin-bottom: 9px;
-}
 .footer-contact-link {
    display: inline-block;
    font-weight: 400;
@@ -65,14 +60,14 @@
    text-decoration: none;
    margin-top: 9px;
    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+   &:hover,
+   &:focus {
+      color: var(--active-color);
+   }
+   &:not(:last-child) {
+      margin-bottom: 9px;}
 
 }
-
-.footer-contact-link:hover,
-.footer-contact-link:focus {
-   color: var(--active-color);
-}
-
 
 /* =========Right box========= */
 .right {
@@ -103,17 +98,18 @@
    fill: var(--third-text-color);  
 }
 
-.footer .social-list-item:not(:last-child) {
-   margin-right: 10px;
+.footer .social-list-item{
+   &:not(:last-child) {
+  margin-right: 10px;
 }
-
-.footer .social-list-link:focus,
-.footer .social-list-link:hover {
-   background-color: var(--active-color);
 }
 
 .footer .social-list-link {
    background: rgba(255, 255, 255, 0.1);
+&:focus,
+&:hover {
+   background-color: var(--active-color);
+}
 }
 
 /* ========Form======== */
@@ -159,14 +155,14 @@
    cursor:pointer;
    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
    transition:  background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) ; 
+&:hover,
+&:focus {
+      background-color: #188ce8;
+   
+   }
 
 }
 
-.footer-form-button:hover,
-.footer-form-button:focus {
-   background-color: #188ce8;
-
-}
 
 .footer-form-icon {
    margin-left: 10px;

@@ -19,10 +19,11 @@
     color: var(--text-color);
 }
 
-.img-title-list:not(:last-child) {
+.img-title-list{
+    &:not(:last-child) {
     margin-right: 30px;
 }
-
+}
 .img-container {
     position: relative;
     z-index: -2;
